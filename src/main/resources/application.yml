@@ -1,0 +1,17 @@
+server:
+  port: 30000
+  servlet:
+    context-path: /verification
+application:
+  name: verification
+spring:
+  data:
+    mongodb:
+      uri: 192.168.1.226:27017,192.168.1.227:27017,192.168.1.228:27017
+      database: hesper
+      username: hesper
+      password: ffffff
+cds:
+  name: nova # 可以写 hesper 或者 nova, 最后用 /hesper/api/v1/user/login获取token, 校验服务正常
+  username: admin
+  password: admin
